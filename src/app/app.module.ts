@@ -6,7 +6,6 @@ import { IonicStorageModule } from  '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { TidyDelimiterPipe } from './pipes/tidy-delimiter.pipe';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -20,7 +19,7 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent, TidyDelimiterPipe],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
