@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-packageName="org.nerna.nanewengland" id="io.cordova.hellocordova" ios-CFBundleIdentifier="org.nerna.nanewengland" version="1.7.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NA New England</name>
+    <description>NA New England Information</description>
+    <author email="admin@newenglandna.org" href="https://nerna.org/">New England Region of NA</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="android-targetSdkVersion" value="32" />
+    <preference name="android-compileSdkVersion" value="32" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyDnk9e_5DQKBOtsIkaTOYYk0ccNrogWyvc" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyB7l9vLeikh-WTyui_DM3Sd328LI2Jsj94" />
+</widget>
