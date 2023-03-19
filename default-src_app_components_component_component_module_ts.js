@@ -515,6 +515,33 @@ PipesModule = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([(0,_angular_cor
 
 /***/ }),
 
+/***/ 3217:
+/*!**********************************************!*\
+  !*** ./src/app/pipes/tidy-delimiter.pipe.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TidyDelimiterPipe": () => (/* binding */ TidyDelimiterPipe)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ 4929);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+let TidyDelimiterPipe = class TidyDelimiterPipe {
+  transform(value, ...args) {
+    return null;
+  }
+};
+TidyDelimiterPipe = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.Pipe)({
+  name: 'tidyDelimiter'
+})], TidyDelimiterPipe);
+
+
+/***/ }),
+
 /***/ 221:
 /*!*********************************************!*\
   !*** ./src/app/services/formats.service.ts ***!
