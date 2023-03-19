@@ -26,18 +26,16 @@ jobs:
       - name: Build Script for android
         run: ./build.sh -r
 
-      - uses: r0adkll/sign-android-release@v1
+      - uses: ilharp/sign-android-release@v1
         name: Sign Android app AAB
         id: sign_app
         with:
-          releaseDirectory: platforms/android/app/build/outputs/bundle/release
-          signingKeyBase64: ${{ secrets.NANEWENGLAND_KEYSTORE }}
-          alias: alias_name
+          releaseDir: platforms/android/app/build/outputs/bundle/release
+          signingKey: ${{ secrets.NANEWENGLAND_KEYSTORE }}
+          keyAlias: alias_name
           keyStorePassword: ${{ secrets.NANEWENGLAND_KEYSTORE_PASSWORD }}
           keyPassword: ${{ secrets.NANEWENGLAND_KEYSTORE_PASSWORD }}
-        env:
-          # override default build-tools version (29.0.3) -- optional
-          BUILD_TOOLS_VERSION: "30.0.3"
+          buildToolsVersion: "30.0.3"
 
       - name: Upload release bundle
         uses: actions/upload-artifact@v1
