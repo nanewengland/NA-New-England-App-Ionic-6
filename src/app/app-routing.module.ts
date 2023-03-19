@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'events', loadChildren: () => import('./pages/events/events.module').then( m => m.EventsPageModule) },
   { path: 'home', loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule) },
   { path: 'jft', loadChildren: () => import('./pages/jft/jft.module').then( m => m.JftPageModule) },
+  { path: 'spad', loadChildren: () => import('./pages/spad/spad.module').then( m => m.SpadPageModule) },
   { path: 'list', loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule) },
   { path: 'settings', loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule) },
   { path: 'map-search', loadChildren: () => import('./pages/map-search/map-search.module').then( m => m.MapSearchPageModule) },

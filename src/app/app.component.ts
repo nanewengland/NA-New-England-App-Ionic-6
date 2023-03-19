@@ -14,12 +14,13 @@ export class AppComponent {
   public selectedIndex = 0;
   public appPages = [
     { title: 'HOME', url: '/home', icon: 'home' },
-    { title: 'SETTINGS', url: '/settings', icon: 'settings' },
     { title: 'MEETINGLIST', url: '/list', icon: 'list' },
     { title: 'GOOGLE_MAPS', url: '/map-search', icon: 'map' },
     { title: 'JUSTFORTODAY', url: '/jft', icon: 'book' },
+    { title: 'SPIRITUALPRINCIPLEADAY', url: '/spad', icon: 'book' },
     { title: 'DATETIME', url: '/datetime', icon: 'stopwatch' },
     { title: 'POSTS', url: '/events', icon: 'calendar' },
+    { title: 'SETTINGS', url: '/settings', icon: 'settings' },
     { title: 'CONTACT', url: '/contact', icon: 'people' }
   ];
 
@@ -44,7 +45,7 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.backgroundColorByName("blue");
+      this.statusBar.backgroundColorByHexString('#ffffff');
       this.splashScreen.hide();
     });
   }

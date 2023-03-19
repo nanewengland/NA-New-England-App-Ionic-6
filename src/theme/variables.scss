@@ -43,6 +43,14 @@ ion-menu ion-item {
   --background: #6a73da;
 }
 
+ion-item ion-icon {
+  color: #eeeeee;
+}
+
+.ion-menu-icon {
+  color: #eeeeee !important;
+}
+
 ion-item .contact-card-content {
   --background: #6a73da;
   --color: #eeeeee;

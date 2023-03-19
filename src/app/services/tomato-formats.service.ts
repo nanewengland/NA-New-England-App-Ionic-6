@@ -12,7 +12,7 @@ export class TomatoFormatsService {
 
   async getFormatNamesByID(uniqueIDs: Set<string>, language) {
     const formatNamesByID = {};
-    const formatsApi = this.tomatoBMLT + Array.from(uniqueIDs).join(",");
+    const formatsApi = this.tomatoBMLT + Array.from(uniqueIDs).join(',');
 
     let data = await this.httpCors.get(formatsApi + '&lang_enum=en', {}, {});
     let jsonData = JSON.parse(data.data);
@@ -34,7 +34,7 @@ export class TomatoFormatsService {
   setExplodedFormatsOnMeetingList(meetingList, formatLanguage) {
     const uniqueFormatIDs = new Set<string>();
     for (const meeting of meetingList) {
-      for (const formatID of meeting?.format_shared_id_list.split(",") || []) {
+      for (const formatID of meeting?.format_shared_id_list.split(',') || []) {
         uniqueFormatIDs.add(formatID);
       }
     }
@@ -42,7 +42,7 @@ export class TomatoFormatsService {
     this.getFormatNamesByID(uniqueFormatIDs, formatLanguage).then((formatNamesByID) => {
       for (const meeting of meetingList) {
         let formats = '';
-        for (const formatID of meeting?.format_shared_id_list?.split(",") || []) {
+        for (const formatID of meeting?.format_shared_id_list?.split(',') || []) {
           const name = formatNamesByID[formatID];
           if (name) {
             formats = `${formats}${name}. `
