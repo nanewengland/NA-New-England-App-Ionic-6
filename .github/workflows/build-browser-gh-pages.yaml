@@ -1,4 +1,4 @@
-name: Push to https://bmltsearch.bmlt.app
+name: Push to https://app.nerna.org
 
 on: [push]
 
