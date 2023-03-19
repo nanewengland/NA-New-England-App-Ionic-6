@@ -1,0 +1,7 @@
+{
+  "name": "NA-New-England-App-Ionic-6",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
