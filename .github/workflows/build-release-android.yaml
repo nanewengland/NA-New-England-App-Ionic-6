@@ -38,7 +38,7 @@ jobs:
           buildToolsVersion: "30.0.3"
 
       - name: Upload release bundle
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: app-release
-          path: platforms/android/app/build/outputs/bundle/release/app-release.aab
+          path: ${{steps.sign_app.outputs.signedFile}}
