@@ -1,0 +1,114 @@
+#jft-date {
+  text-align: left;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1em;
+}
+
+#jft-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 1em;
+}
+
+#jft-page {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#jft-quote {
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+#jft-quote-source {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#jft-thought {
+  margin-left:20%;
+  margin-right: 20%;
+  margin-bottom: 2em;
+}
+
+#jft-copyright {
+  font-style: italic;
+  text-align: center;
+  font-size: small;
+  margin-bottom: 1em;
+}
+
+
+
+body {
+  margin:0 auto;
+  font-family: 'times new roman', serif;
+}
+
+#jft-container {
+  width: 770px;
+  margin:0 auto;
+  font-size: medium;
+  font-family: 'times new roman', serif;
+}
+
+@media (min-width: 750px) and (max-width: 800px) {
+  body {
+    font-size: 13px;
+    font-family: 'times new roman';
+  }
+  #jft-container {
+    font-size: 13px;
+    width: 85%;
+  }
+  #jft-copyright {
+    font-style: italic;
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 1em;
+  }
+  #jft-date {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 1em;
+  }
+  #jft-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 9px;
+    font-family: 'times new roman';
+  }
+  #jft-container {
+    font-size: 9px;
+    width: 85%;
+  }
+  #jft-copyright {
+    font-style: italic;
+    text-align: center;
+    font-size: 7px;
+    margin-bottom: 1em;
+  }
+  #jft-date {
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 1em;
+  }
+  #jft-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 1em;
+  }
+}
